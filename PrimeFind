@@ -1,0 +1,15 @@
+import math
+
+a = int(input("enter number to find prime numbers within "))+1
+
+for j in range(a,2,-1):
+    c = 0
+    b = int(math.sqrt(j)) + 1
+
+    for i in range(2, b):
+         if j % i == 0:
+            c = 1
+            break
+
+    if c == 0:
+        print("prime " + str(j))
